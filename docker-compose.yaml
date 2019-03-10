@@ -7,3 +7,6 @@ services:
       dockerfile: Dockerfile
     volumes:
     - ./:/app/
+
+  py_dnspython:
+    image: linickx/python-alpine-dnspython
