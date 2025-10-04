@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM python:alpine
 LABEL maintainer="Nick <linickx.com>"
 LABEL version="0.1"
 

@@ -18,6 +18,6 @@ except:
     logger.debug("Exception: %s", sys.exc_info()[0])
     sys.exit()
 
-answers = dns.resolver.query('gmail.com', 'MX')
+answers = dns.resolver.resolve('gmail.com', 'MX')
 for rdata in answers:
     logger.info('Host %s has preference %s', rdata.exchange, rdata.preference)
